@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retina_ai"
+version = "0.1.0"
+description = "OCT and diabetic retinopathy classification with Streamlit apps, training scripts, and evaluation tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["OCT", "diabetic-retinopathy", "streamlit", "pytorch", "computer-vision"]
+dynamic = []
+
+tool.setuptools.packages.find = { include = ["retina_ai*"] }
+dependencies = [
+  "torch",
+  "torchvision",
+  "numpy",
+  "pillow",
+  "streamlit",
+  "reportlab",
+  "scikit-learn",
+  "pandas",
+  "seaborn",
+  "matplotlib",
+  "passlib",
+  "pyotp",
+  "streamlit-lottie",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/your-org/retina_ai"
+"Source" = "https://github.com/your-org/retina_ai"
+
+[project.scripts]
+train-fundus = "retina_ai.scripts.train_fundus:main"
+train-oct8 = "retina_ai.scripts.train_oct8:main"
+evaluate = "retina_ai.scripts.evaluate:main"
+test-inference = "retina_ai.scripts.test_inference:main"

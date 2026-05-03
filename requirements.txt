@@ -1,0 +1,13 @@
+torch
+torchvision
+numpy
+pillow
+streamlit
+reportlab
+scikit-learn
+pandas
+seaborn
+matplotlib
+passlib
+pyotp
+streamlit-lottie

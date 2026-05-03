@@ -1,0 +1,12 @@
+{
+  "classes": [
+    "NORMAL",
+    "DME",
+    "CNV",
+    "DRUSEN",
+    "AMD",
+    "CSR",
+    "DR",
+    "MH"
+  ]
+}
